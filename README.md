@@ -7,7 +7,9 @@
 > TensorRT uses a combination of techniques to achieve high performance, including layer fusion, precision calibration, kernel auto-tuning, and dynamic tensor memory management. These techniques enable TensorRT to achieve high throughput and low latency for deep learning inference, making it ideal for applications such as real-time object detection, speech recognition, and natural language processing.
 
 > TensorRT supports a wide range of deep learning operations, including convolution, pooling, activation, and softmax, and it can be used with a variety of deep learning models, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models.
->  
+
+  ![image](https://github.com/A-janjan/tensorrt/assets/62621376/fa93e17d-5f20-41aa-86cf-bd4c80c7a276)
+
 
 ## Goals
 - learn how to optimize neural networks with tensorRT [ in Python ]
