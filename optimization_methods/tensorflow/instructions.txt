@@ -1,0 +1,29 @@
+######################### part 1 : making and saving model ##############################
+
+!python -m save_model.py \
+  --model_dir=./checkpoints \
+  --data_dir=/data \
+  --train_epochs=10 \
+  --download
+  
+  
+!saved_model_cli show --dir checkpoints/saved_model/ --tag_set serve --signature_def serving_default
+
+#########################################################################################
+
+######################## part 2 : converting and inference ##############################
+
+
+!sudo apt install tensorrt
+
+!pip install tensorflow_model_optimization
+!pip install immutabledict
+
+
+!python tf_inference.py --use_tftrt_model --precision fp16
+
+!python tf_inference.py --use_native_tensorflow
+
+## now we can conclude which one is faster
+
+##########################################################################################
