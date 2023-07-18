@@ -1,0 +1,41 @@
+>> For TRT optimization with pytorch we use torch2trt model
+
+##############################################################
+
+for installing this module we do following commands: 
+
+> git clone https://github.com/NVIDIA-AI-IOT/torch2trt
+> cd torch2trt
+> pip install tensorrt
+> sudo python setup.py install
+
+################################################################
+
+
+################################################################
+after executing the following python files:
+
+    - native_saved_model_maker.py
+    - trt_saved_model_maker.py
+
+we will have the following pt files (saved models):
+
+    - resnet_trt.pt
+    - resnet_native.pt
+
+and after that we should use these pt files and compare the results.
+
+For doing this we should do following instructions:
+    - python -m compare_results.py
+
+##################################################################
+
+#############################################################
+
+example1.py is a useful example for comparing trt and native in other way(torch_tensorrt):
+
+before that you need to install:
+
+> pip install torch_tensorrt
+
+after executing the example1.ipynb you will see how much is become faster.(for example in T4 it was 3x faster)
