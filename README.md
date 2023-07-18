@@ -19,5 +19,13 @@
 ## Prerequisite
 - some knowledge of Python programming
 - be familiar with Pytorch and TensorFlow
-- be familiar with artificial neural-networks
+- be familiar with artificial neural networks
 - having a computer with installed Cuda
+
+## Tested devices
+- Tesla T4 (google Colab) [ remote ]
+- NVIDIA Jetson AGX Xavier [ local ]
+
+---------------------------------------------------------
+
+>> Current status: working on Pytorch optimization on Jetson AGX Xavier and compare results
