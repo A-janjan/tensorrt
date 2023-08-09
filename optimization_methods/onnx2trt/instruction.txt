@@ -1,0 +1,11 @@
+########################################################################
+requirements:
+
+sudo apt install tensorrt
+pip install tensorrt
+
+########################################################################
+
+first : build onnx from tf saved model (json and h5)
+
+second: build trt engine from onnx file

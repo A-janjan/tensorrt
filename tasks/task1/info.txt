@@ -1,0 +1,12 @@
+########################################################################################
+
+tf_model.py :
+
+    - load saved model (from json and h5 files) and do inference and measure results
+    
+trt_model.py :
+
+    - load saved model (from saved_model folder) and convert it to tensorRT engine and then do the inference and measure results
+
+
+########################################################################################
