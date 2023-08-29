@@ -23,8 +23,9 @@ def load_with_converter(path, precision, batch_size):
         precision_mode = trt.TrtPrecisionMode.INT8
     elif precision == 'fp16':
         precision_mode = trt.TrtPrecisionMode.FP16
-        precision_mode = trt.TrtPrecisionMode.FP32
     else:
+        precision_mode = trt.TrtPrecisionMode.FP32
+    
         params = params._replace(
         precision_mode=precision_mode,
         max_workspace_size_bytes=2 << 32,  # 8,589,934,592 bytes
