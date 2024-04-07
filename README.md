@@ -28,4 +28,4 @@
 
 ---------------------------------------------------------
 
->> Current status: working on Pytorch optimization on Jetson AGX Xavier and compare results
+>> Current status: end
